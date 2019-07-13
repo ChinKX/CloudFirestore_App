@@ -28,7 +28,8 @@ h) Add the required reference to the repositories section of the project level b
 ```
 
 ### Adding RNFirebaseFirestorePackage:
-a) Add implementation "com.google.firebase:firebase-firestore:17.0.2" into android/app/build.gradle
+
+a) Add implementation "com.google.firebase:firebase-firestore:17.0.2" into android/app/build.gradle<br/>
 b) Add the following lines into android/app/src/main/java/com/rn_firestore_android/MainApplication.java:
 ```
 import io.invertase.firebase.firestore.RNFirebaseFirestorePackage;
