@@ -41,7 +41,7 @@ android {
     }
 }
 
-7. Start using Firebase:
+7. Start using Firebase firestore:
 	import firebase from 'react-native-firebase';
 	
 	...
