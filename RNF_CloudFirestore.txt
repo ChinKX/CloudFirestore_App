@@ -1,0 +1,47 @@
+Reference Links:
+https://rnfirebase.io/docs/v5.x.x/installation/initial-setup#Platform-Specific-Installation
+https://rnfirebase.io/docs/v5.x.x/installation/android
+https://github.com/react-native-community/async-storage/issues/115
+https://github.com/react-native-community/async-storage/issues/151
+https://github.com/oblador/react-native-vector-icons/issues/544
+https://github.com/onmyway133/notes/issues/333
+https://github.com/invertase/react-native-firebase/issues/977
+https://stackoverflow.com/questions/46267621/unable-to-merge-dex/48216005
+
+https://www.youtube.com/watch?v=_7iKm233n_M
+
+Installation Guides:
+1. npm install --save react-native-firebase
+2. react-native link react-native-firebase
+3. Set up firebase project and initialize android project:
+	a) Set the package name to the package name specified in android/app/src/main/AndroidManifest.xml
+	b) copy and paste google-services.json into android/app/
+4. Modify files:
+	a) Add "classpath ..." into android/build.gradle
+	b) Add "apply plugin ..." into android/app/build.gradle
+	c) Add firebase modules into android/app/build.gradle
+	d) Update the gradle URL "../gradle-4.10.1-all.zip" in android/gradle/wrapper/gradle-wrapper.properties
+	e) Check that google() exists in android/build.gradle
+	f) Update Android build tools to version 3.3.2 android/build.gradle
+	g) Update all compile statements to be implementation in android/app/build.gradle
+	h) Add the required reference to the repositories section of the project level build.gradle (android/build.gradle)
+	  (Google Play services from 11.2.0 onwards require their dependencies to be downloaded from Google's Maven respository)
+5. 
+a) Add implementation "com.google.firebase:firebase-firestore:17.0.2" into android/app/build.gradle
+b) Add the following lines into android/app/src/main/java/com/rn_firestore_android/MainApplication.java:
+	i. import io.invertase.firebase.firestore.RNFirebaseFirestorePackage;
+	ii. new RNFirebaseFirestorePackage(),
+6.
+Add the "multiDexEnabled true"
+app/build.gradle:
+
+android {
+    defaultConfig {
+       multiDexEnabled true
+    }
+}
+
+7. Start using Firebase:
+	import firebase from 'react-native-firebase';
+	
+	...

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "593865257473",
+    "firebase_url": "https://kxware-921f4.firebaseio.com",
+    "project_id": "kxware-921f4",
+    "storage_bucket": "kxware-921f4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:593865257473:android:97aeaab4f6aa0d1e",
+        "android_client_info": {
+          "package_name": "com.rn_firestore_android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "593865257473-ipk7k5nun5d70ehe975url39praunnli.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_jFAqpnSU6GA7a8QC3SLC_7TKFf6oHCg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "593865257473-ipk7k5nun5d70ehe975url39praunnli.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
