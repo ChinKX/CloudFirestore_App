@@ -26,14 +26,13 @@ Installation Guides:
 	g) Update all compile statements to be implementation in android/app/build.gradle
 	h) Add the required reference to the repositories section of the project level build.gradle (android/build.gradle)
 	  (Google Play services from 11.2.0 onwards require their dependencies to be downloaded from Google's Maven respository)
-5. 
+5. Adding RNFirebaseFirestorePackage:
 a) Add implementation "com.google.firebase:firebase-firestore:17.0.2" into android/app/build.gradle
 b) Add the following lines into android/app/src/main/java/com/rn_firestore_android/MainApplication.java:
 	i. import io.invertase.firebase.firestore.RNFirebaseFirestorePackage;
 	ii. new RNFirebaseFirestorePackage(),
-6.
-Add the "multiDexEnabled true"
-app/build.gradle:
+6. Bug Fixing:
+Add the "multiDexEnabled true" in app/build.gradle:
 
 android {
     defaultConfig {

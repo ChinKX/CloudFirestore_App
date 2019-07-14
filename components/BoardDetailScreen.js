@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet, ScrollView, ActivityIndicator, View } from 'react-native';
+import { StyleSheet, ScrollView, ActivityIndicator, View, Image } from 'react-native';
 import { List, ListItem, Text, Card, Button } from 'react-native-elements';
 //import firebase from '../Firebase';
 import firebase from 'react-native-firebase';
@@ -57,6 +57,7 @@ class BoardDetailScreen extends Component {
         </View>
       )
     }
+    const url =  this.state.value == 'news'? <Text>data</Text>: null;// ternary operator
     return (
       <ScrollView>
         <Card style={styles.container}>
@@ -69,6 +70,14 @@ class BoardDetailScreen extends Component {
             </View>
             <View>
               <Text h4>{this.state.board.author}</Text>
+            </View>
+            <View>
+              {this.state.board.url != '' 
+              ? <Image
+                  style={{width: 150, height: 150}}
+                  source={{uri: this.state.board.url}}
+                />
+              : null}
             </View>
           </View>
           <View style={styles.detailButton}>
