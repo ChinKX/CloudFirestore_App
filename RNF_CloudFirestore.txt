@@ -11,7 +11,7 @@ https://stackoverflow.com/questions/46267621/unable-to-merge-dex/48216005
 https://www.youtube.com/watch?v=_7iKm233n_M
 
 Installation Guides:
-1. npm install --save react-native-firebase
+1. npm install --save react-native-firebase@5.3.1
 2. react-native link react-native-firebase
 3. Set up firebase project and initialize android project:
 	a) Set the package name to the package name specified in android/app/src/main/AndroidManifest.xml
