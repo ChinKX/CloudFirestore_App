@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, ScrollView, ActivityIndicator, View, TextInput } from 'react-native';
 import { Button } from 'react-native-elements';
-//import firebase from '../Firebase';
 import firebase from 'react-native-firebase';
 
 class EditBoardScreen extends Component {

@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, ScrollView, ActivityIndicator, View, Image } from 'react-native';
 import { List, ListItem, Text, Card, Button } from 'react-native-elements';
-//import firebase from '../Firebase';
 import firebase from 'react-native-firebase';
 
 class BoardDetailScreen extends Component {
@@ -26,7 +25,7 @@ class BoardDetailScreen extends Component {
           key: doc.id,
           isLoading: false
         });
-      } else {
+      } else { 
         console.log("No such document!");
       }
     });

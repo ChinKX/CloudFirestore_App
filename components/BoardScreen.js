@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { StyleSheet, ScrollView, ActivityIndicator, View, Text, Button } from 'react-native';
 import { ListItem, Icon } from 'react-native-elements';
-//import firebase from '../Firebase';
 import firebase from 'react-native-firebase';
 
 class BoardScreen extends Component {
